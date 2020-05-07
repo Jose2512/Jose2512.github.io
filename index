@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Activity 1: Basic HTML Bio</title>
+</head>
+
+<body>
+  <h1>José Alberto Alvarez Huerta</h1>
+  <img src="https://placehold.it/200x200" alt="Cool image">
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+  </p>
+  <ul>
+    <li><strong><a href="#">Facebook</a></strong></li>
+    <li><strong><a href="#">Twitter</a></strong></li>
+    <li><strong><a href="#">Github</a></strong></li>
+  </ul>
+  <table>
+    <tr>
+      <th>Movies</th>
+      <th>Books</th>
+      <th>Games</th>
+    </tr>
+    <tr>
+      <th>Pacific rim</th>
+      <th>Billion Dollar lessons</th>
+      <th>F1</th>
+    </tr>
+  </table>
+
+</body>
+
+</html>
