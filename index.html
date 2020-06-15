@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Procesos de Licitación vigentes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,17 +17,16 @@
         <h1>Procesos de licitación vigentes</h1>
         <p>Basado en la información recibida por LICIGOB para CUPISA y CONSTRUCCIONES URALES unicamente</p>
       </div>
-    </div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="well">
-          <div class="row">
+          <div>
             <h5>Dependencia:</h5>
             <select id="selDataset" class="form-control" onchange='loadData()'>
             <option value="todas">---------- TODAS LAS DEPENDENCIAS ----------</option>
             </select>
           </div>
-          <div class="row">
+          <div class>
             <h5>Filtros por Empresa:</h5>
               <div class="col-md-4">
                 <div class="form-check">
@@ -55,36 +53,27 @@
                 </div>
               </div>
           </div>
-
-
           <div class="form-group">
             <label for="exampleInputEmail1">Palabra clave</label>
             <input type="email" class="form-control" id="keywordsearch" aria-describedby="emailHelp" placeholder="Palabra clave">
           </div>
-          <button type="submit" class="btn btn-primary" id="filter-btn">Buscar</button>
-
-
-
-          
-
-
-
-
-
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="well" >
-          <h5>Parametros de busqueda:</h5>
-          <select multiple class="form-control" id="parametros" onchange='loadData2()' style="height: 200px;">
-          </select>
+          <button type="submit" class="btn btn-primary" id="filter-btn">Buscar</button>   
         </div>
       </div>
     </div>
-    </div>
-    <div id=information_proc class='container'></div>
   </div>
+      <div class="row">
+        <div class="col-md-3">       
+          <ul class="list-group" id="paramCupi">
+          </ul>
+        </div>
+        <div id=information_proc class='col-md-9'></div>
+    </div>
+    
 
+    
+  </div>
+</div>
   <script src="https://d3js.org/d3.v5.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="./static/js/app.js"></script>

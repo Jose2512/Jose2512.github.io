@@ -121,9 +121,12 @@ function splitbywords(searchWord){
     if (keyWord.length === 0){ 
      //pass
     }else{
-      d3.select("#parametros").append("option")
-      .text(`${searchWord}: ${keyWord.length}`)
-      .attr("value", searchWord)
+      d3.select("#paramCupi").append()
+      .html(`<li class="list-group-item d-flex justify-content-between align-items-center" onclick="loadData2('${searchWord}')">
+      ${searchWord}
+      <span class="badge badge-primary badge-pill">${keyWord.length}</span>
+    </li> `)
+
     }  
 })
 };
@@ -133,11 +136,11 @@ searchWords.forEach(word => {
 });
 
 
-function loadData2(){
+function loadData2(valuePassed){
   d3.select("#information_proc").html("")
-  var inputValue = d3.select("#parametros").property("value");
+
   d3.json("./data/licigob.json").then(data => {
-      var filteredData3 = data.filter((element) => element.Descripcion.toLowerCase().includes(inputValue)) 
+      var filteredData3 = data.filter((element) => element.Descripcion.toLowerCase().includes(valuePassed)) 
   filteredData3.forEach(element => {
     if (element.interno == "CUPISA"){
       var topColor = "#337ab7"
